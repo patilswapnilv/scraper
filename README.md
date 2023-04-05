@@ -10,42 +10,53 @@ Pytest for testing
 
 ## File Structure
 ```
-.
+blog-scraper-and-rewriter
 ├── backend
-│   ├── BlogScraper.py
-│   ├── requirements.txt
-│   ├── rewriter.py
-│   └── tests
-│       ├── test_blog_scraper.py
-│       └── test_rewriter.py
+│ ├── BlogScraper.py
+│ ├── ContentRewriter.py
+│ ├── init.py
+│ ├── items.py
+│ ├── middlewares.py
+│ ├── pipelines.py
+│ └── settings.py
 ├── frontend
-│   ├── public
-│   │   ├── index.html
-│   │   └── ...
-│   ├── src
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   ├── components
-│   │   │   ├── BlogForm.js
-│   │   │   └── Result.js
-│   │   ├── services
-│   │   │   └── BlogService.js
-│   │   └── ...
-│   ├── package.json
-│   └── ...
+│ ├── public
+│ │ ├── index.html
+│ │ ├── manifest.json
+│ │ └── robots.txt
+│ ├── src
+│ │ ├── App.js
+│ │ ├── App.test.js
+│ │ ├── index.js
+│ │ ├── reportWebVitals.js
+│ │ └── setupTests.js
+│ ├── .gitignore
+│ ├── package-lock.json
+│ ├── package.json
+│ └── README.md
+├── tests
+│ ├── backend
+│ │ ├── init.py
+│ │ ├── test_BlogScraper.py
+│ │ └── test_ContentRewriter.py
+│ └── frontend
+│ ├── init.py
+│ └── test_App.js
 ├── .gitignore
-└── README.md
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 
 
 ## Getting the Code Working
 - Clone the repository to your local machine.
 - Install the dependencies for the backend by running:
-<code> pip install -r backend/requirements.txt. </code>
+<code> pip install -r requirements.txt </code>
 - Install the dependencies for the frontend by running:
-<code> npm install inside the frontend directory. </code>
+<code> npm install </code>inside the frontend directory. 
 - Start the backend server by running:
-<code> python backend/app.py.</code>
+<code> python backend/BlogScraper.py</code>
 - Start the frontend by running:
 <code> npm start inside the frontend directory.</code>
 - Access the application at </code> http://localhost:3000 </code> in your web browser.
