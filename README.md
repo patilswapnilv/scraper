@@ -9,6 +9,7 @@ OpenAI API for text rewriting
 Pytest for testing
 
 ## File Structure
+```
 .
 ├── backend
 │   ├── BlogScraper.py
@@ -34,6 +35,7 @@ Pytest for testing
 │   └── ...
 ├── .gitignore
 └── README.md
+```
 
 
 ## Getting the Code Working
